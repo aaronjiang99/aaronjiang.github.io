@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页 | 数字孪生与 R&B 的交响</title>
+    <style>
+        :root {
+            --fb-blue: #1877F2;
+            --fb-bg: #F0F2F5;
+            --fb-white: #FFFFFF;
+            --text-main: #050505;
+            --text-secondary: #65676B;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--fb-bg);
+            margin: 0;
+            color: var(--text-main);
+        }
+
+        /* 顶部导航栏 */
+        nav {
+            background-color: var(--fb-white);
+            height: 56px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo { color: var(--fb-blue); font-size: 24px; font-weight: bold; text-decoration: none; }
+
+        /* 主体容器 */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            gap: 16px;
+        }
+
+        /* 通用卡片样式 */
+        .card {
+            background: var(--fb-white);
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            margin-bottom: 16px;
+        }
+
+        h3 { margin-top: 0; font-size: 20px; }
+
+        /* 左侧栏样式 */
+        .profile-photo {
+            width: 100%;
+            height: 300px;
+            background: #ddd; /* 可替换为你自己的照片链接 */
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .intro-item {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            color: var(--text-secondary);
+        }
+
+        .tag {
+            background: #E4E6EB;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin: 4px;
+            display: inline-block;
+        }
+
+        /* 右侧动态流样式 */
+        .post-header { display: flex; align-items: center; margin-bottom: 12px; }
+        .avatar-small { width: 40px; height: 40px; background: #1877f2; border-radius: 50%; margin-right: 10px; }
+        .post-time { font-size: 12px; color: var(--text-secondary); }
+        .post-image { 
+            width: 100%; 
+            border-radius: 8px; 
+            margin-top: 10px;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* 模拟数字孪生科技感配色 */
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<nav><a href="#" class="logo">f</a></nav>
+
+<div class="container">
+    <aside>
+        <div class="card">
+            <div style="background: var(--fb-blue); height: 100px; border-radius: 8px 8px 0 0; margin: -16px -16px 16px -16px;"></div>
+            <div style="text-align: center; margin-top: -60px;">
+                <div style="width: 120px; height: 120px; background: #ccc; border: 4px solid white; border-radius: 50%; margin: 0 auto;"></div>
+                <h2>你的名字</h2>
+                <p style="color: var(--text-secondary)">数字孪生专家 | 电力数字化转型</p>
+            </div>
+            <hr>
+            <div class="intro-item">📍 现居：广东 · 南方电网项目现场</div>
+            <div class="intro-item">💼 专注：业务建模、数据融合、指挥调度</div>
+            <div class="intro-item">🎧 最近在听：Ariana Grande - Eternal Sunshine</div>
+        </div>
+
+        <div class="card">
+            <h3>个人爱好</h3>
+            <div>
+                <span class="tag">R&B Music</span>
+                <span class="tag">Afro-fusion</span>
+                <span class="tag">数字孪生</span>
+                <span class="tag">十五五规划研究</span>
+                <span class="tag">城市旅行</span>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="card">
+            <div class="post-header">
+                <div class="avatar-small"></div>
+                <div>
+                    <strong>你的名字</strong> 发布了新项目<br>
+                    <span class="post-time">2026年3月 · 数字化实验室</span>
+                </div>
+            </div>
+            <p>终于完成了“管理大楼数字孪生平台”的本体建模。基于 DAMA-DMBOK 标准，我们成功打通了业务数据流。这是迈向“管理穿透”的关键一步！🚀</p>
+            <div class="post-image">Digital Twin Platform: Blueprint & Running</div>
+        </div>
+
+        <div class="card">
+            <div class="post-header">
+                <div class="avatar-small" style="background: #e91e63;"></div>
+                <div>
+                    <strong>你的名字</strong> 正在收听音乐<br>
+                    <span class="post-time">2 小时前</span>
+                </div>
+            </div>
+            <p>在写专利说明书的间隙，Afro-fusion 的节奏总能给我灵感。准备买下半年 BLACKPINK 的演唱会门票，有人一起吗？🎫</p>
+        </div>
+
+        <div class="card">
+            <div class="post-header">
+                <div class="avatar-small" style="background: #4caf50;"></div>
+                <div>
+                    <strong>你的名字</strong> 更新了旅行相册<br>
+                    <span class="post-time">2025年12月 · 冬季回忆</span>
+                </div>
+            </div>
+            <p>想念那些在不同城市穿梭的日子，从繁华的 CBD 到静谧的老街。旅行不仅是空间的位移，更是灵感的重新建模。</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px;">
+                <div style="height: 150px; background: #ddd; border-radius: 4px;"></div>
+                <div style="height: 150px; background: #eee; border-radius: 4px;"></div>
+            </div>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
